@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body>
+<div ng-app="">
+<style>
+table, th, td {
+    border: 1.5px solid black;
+}
+
+</style>
+</head>
+<body>
+<form>
+<table>
+  <tr>
+    <th>Name</th>
+    <td><select ng-model="Name">
+    <option value="Mr"></option>
+  	<option value="Mr">Mr</option>
+  	<option value="Mrs">Mrs</option>
+  	<option value="Ms">Miss</option>
+	</select>
+<input text="text" placeholder="Lastname" ng-model="Name1" width="50%"> 
+<input text="text" placeholder="Firstname" ng-model="Name2" width="50%"> 
+	</td>
+  </tr>
+  <tr>
+    <th>Address</th>
+    <td><input text="text" placeholder="City" ng-model="add"></td>
+  </tr>
+  <tr>
+    <th>Contact No.</th>
+    <td><input text="text" placeholder="09xx-xxx-xxx" ng-model="cont"></td>
+  </tr>
+  <tr>
+    <th>E-mail:</th>
+    <td><input text="text" placeholder="user@email.com" ng-model="email"></td>
+  </tr>
+  <tr>
+    <th>Date of birth</th>
+    <td><input text="text" placeholder="MM/DD/YY" ng-model="birth"></td>
+  </tr>
+   <tr>
+    <th>Gender</th>
+  <td><input type="radio" name="gender" value="male" ng-model="male"> Male
+ <input type="radio" name="gender" value="female" ng-model="fem"> Female
+ </td>
+</table>
+<br><br>
+	<button type="reset" value="Reset">Reset</button>
+	</form>
+
+	<p>Name: <span type="text" ng-bind="Name"></span> <span type="text" ng-bind="Name1"></span> <span type="text" ng-bind="Name2"></span></p>
+	<p>Address: <span type="text" ng-bind="add"></span></p>
+	<p>Contact No: <span type="text" ng-bind="cont"></span></p>
+	<p>Email: <span type="text" ng-bind="email"></span></p>
+	<p>Date of Birth: <span type="text" ng-bind="birth"></span></p>
+	<p>Gender: <span type="text" ng-bind="male"></span><span type="text" ng-bind="fem"></span></p>
+
+</body>
+</html>
